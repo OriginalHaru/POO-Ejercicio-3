@@ -14,7 +14,7 @@ class Figura
         Figura(int _lado, int _altura);
         ~Figura(){};
 
-        void MostrarResultados(int _lado, int _altura);
+        void MostrarResultados(int _lado,int _altura);
         void CalcularArea(int _lado, int _altura);
         void CalcularPerimetro(int _lado , int _altura);
 
@@ -51,8 +51,8 @@ void Figura::MostrarResultados(int _lado, int _altura)
 {
     int perimetro;
     int area;
-     perimetro = _lado * 2;
-     area = _lado * 4;
+     perimetro = _lado * 4;
+     area = _lado * _altura;
      cout << "==========================================================" << endl;
      cout << "El perimetro de este cuadrado es de " << perimetro << " centimetros" << endl;
      cout << "EL area de este cuadradro es de " << area << " centimetros" << endl;
